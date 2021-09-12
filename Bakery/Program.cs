@@ -56,7 +56,7 @@ namespace PierresBakery
 
           Console.WriteLine($"The Price for the Pastries is ${addedPastry.Price}.");
 
-          Console.WriteLine("Press anything to see your total.")
+          Console.WriteLine("Press anything to see your total.");
           Console.ReadKey();
 
           Console.WriteLine($"Your total price is ${addedBread.Price + addedPastry.Price}. Thank you for shopping at Pierres!");
