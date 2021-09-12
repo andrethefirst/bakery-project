@@ -38,5 +38,12 @@ namespace PierresBakery.Tests
       addedBread.PastryPrice();
       Assert.AreEqual(10, addedBread.PastryPrice())
     }
+
+    [TestMethod]
+    public void Pastry_Added()
+    {
+      Pastry addedPastry = new Pastry(1);
+      Assert.AreEqual(typeof(Bread), addedBread.GetType());
+    }
   }
 }
