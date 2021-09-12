@@ -7,9 +7,36 @@ namespace PierresBakery.Tests
   public class PierresBakeryTests
   {
     [TestMethod]
-    public void Pastry_Added()
+    public void Bread_Added()
     {
-     
+     Bread addedBread = new Bread(1);
+     Assert.AreEqual(typeof(Bread), addedBread.GetType());
+    }
+
+    [TestMethod]
+    public void AmountOfBread()
+    {
+      int breadAmount =1;
+      Bread addedBread = new Bread(breadAmount);
+      Assert.AreEqual(1, addedBread.Amount);
+    }
+
+    [TestMethod]
+    public void BreadPricingDeal()
+    {
+      int breadAmount = 2;
+      Bread addedBread = new Bread(breadAmount);
+      addedBread.PastryPrice();
+      Assert.AreEqual(10, addedBread.PastryPrice());
+    }
+
+    [TestMethod]
+    public void BreadPricingGetOneFree()
+    {
+      int breadAmount = 3;
+      Bread addedBread = new Bread(breadAmount);
+      addedBread.PastryPrice();
+      Assert.AreEqual(10, addedBread.PastryPrice())
     }
   }
 }
